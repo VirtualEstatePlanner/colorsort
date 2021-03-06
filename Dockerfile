@@ -27,5 +27,11 @@ ENV HEIGHT=
 ADD ./app /app
 WORKDIR /app
 CMD /bin/ash
-#ENTRYPOINT python pixelsort --image-threshold 0 -i ${WIDTH} --use-tiles --tile-x ${WIDTH} --tile-y ${HEIGHT} /source.png -o /output/output.png --log
+
 ENTRYPOINT python pixelsort --log -s chroma -i ${WIDTH} --use-tiles --tile-x ${WIDTH} --tile-y ${HEIGHT} /source.png -o /output/output.png
+#ENTRYPOINT python pixelsort --log -s hue -i ${WIDTH} --use-tiles --tile-x ${WIDTH} --tile-y ${HEIGHT} /source.png -o /output/output.png
+#ENTRYPOINT python pixelsort --log -s intensity -i ${WIDTH} --use-tiles --tile-x ${WIDTH} --tile-y ${HEIGHT} /source.png -o /output/output.png
+#ENTRYPOINT python pixelsort --log -s lightness -i ${WIDTH} --use-tiles --tile-x ${WIDTH} --tile-y ${HEIGHT} /source.png -o /output/output.png
+#ENTRYPOINT python pixelsort --log -s luma -i ${WIDTH} --use-tiles --tile-x ${WIDTH} --tile-y ${HEIGHT} /source.png -o /output/output.png
+#ENTRYPOINT python pixelsort --log -s saturation -i ${WIDTH} --use-tiles --tile-x ${WIDTH} --tile-y ${HEIGHT} /source.png -o /output/output.png
+#ENTRYPOINT python pixelsort --log -s value -i ${WIDTH} --use-tiles --tile-x ${WIDTH} --tile-y ${HEIGHT} /source.png -o /output/output.png
