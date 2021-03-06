@@ -21,7 +21,7 @@ One can run ` pip install -r requirements.txt` to download any necessary modules
 
 To run the script, use the command `python pixelsort.py <image> -o <result>` to sort a given image
 and store it in `<result>`. Use the `--log` flag to view progress for sorting particularly large images.
-Various sorting options are described in detail in [the full documentation](docs/DOCUMENTATION.md).
+Various sorting options are described in detail in [the full documentation].
 One can also run the script with the `-h|--help` flag to see the full list of options.
 
 Given the following original image:
@@ -48,7 +48,7 @@ and sorts pixels in lines tilted at 60 degrees:
 
 ![Sorting with angled lines][sort-angled-line-60]
 
-Sorting paths are explained in more detail in [the paths documentation](docs/PATHS.md).
+Sorting paths are explained in more detail in [the paths documentation].
 
 ### Animation
 
@@ -66,12 +66,12 @@ in which the angle of sorting goes from horizontal to vertical.
 One can also run the script using animated GIFs as input.
 
 [//]: # "Figures"
-[original]: docs/figures/original.jpg
-[default]: docs/figures/sort-sum.jpg
-[sort50random]: docs/figures/sort-50-random.jpg
-[sort100-diagonal]: docs/figures/sort-100-diagonal.jpg
-[sort-angled-line-60]: docs/figures/sort-angled-line-60.jpg
-[sort-animated]: docs/figures/sort-animated.gif
+[original]: README-images/original.jpg
+[default]: README-images/sort-sum.jpg
+[sort50random]: README-images/sort-50-random.jpg
+[sort100-diagonal]: README-images/sort-100-diagonal.jpg
+[sort-angled-line-60]: README-images/sort-angled-line-60.jpg
+[sort-animated]: README-images/sort-animated.gif
 
 
 ### License
@@ -89,7 +89,7 @@ A detailed description of the possible sort parameters.
 To run the script, use the command `python pixelsort.py <image> -o <result>` to sort a given image
 and store it in `<result>`. Use the `--log` flag to view progress for sorting particularly large images.
 The other settings and options are described below.
-For the example figures, the original image used is this:
+For the example README-images, the original image used is this:
 
 ![Original Image][original]
 
@@ -222,7 +222,7 @@ Otherwise, one can explicitly specify what type of path to use with the `-p` or 
 
 ![Sorting with concentric path][sort100-vertical]
 
-Sorting paths are explained in detail in [the paths documentation.](docs/PATHS.md)
+Sorting paths are explained in detail in [the paths documentation.](PATHS.md)
 
 #### Path modifiers
 
@@ -387,44 +387,44 @@ One can also input animated gifs, and each frame of the gif will be modified acc
 If `--animate "..."` is specified as well, the animated settings will be applied frame-by-frame to the gif.
 
 [//]: # "Figures"
-[original]: figures/original.jpg
-[default]: figures/sort-sum.jpg
-[sort50]: figures/sort-50.jpg
-[sort100]: figures/sort-100.jpg
-[sort50random]: figures/sort-50-random.jpg
-[sort100random]: figures/sort-100-random.jpg
-[sort-default]: figures/sort-default.jpg
-[sort-sum]: figures/sort-sum.jpg
-[sort-blue]: figures/sort-blue.jpg
-[sort50reverse]: figures/sort-50-reverse.jpg
-[sort-sum-d100]: figures/sort-sum-d100.jpg
-[sort-sum-d200]: figures/sort-sum-d200.jpg
-[sort100-progressive]: figures/sort-100-progressive.jpg
-[sort100-concentric]: figures/sort-100-concentric.jpg
-[sort100-diagonal]: figures/sort-100-diagonal.jpg
-[sort-diagonal-single]: figures/sort-diagonal-single.jpg
-[sort100-random-walk]: figures/sort-100-random-walk.jpg
-[sort100-random-walk-horizontal]: figures/sort-100-random-walk-horizontal.jpg
-[sort100-random-walk-vertical]: figures/sort-100-random-walk-vertical.jpg
-[sort100-vertical]: figures/sort-100-vertical.jpg
-[sort-concentric-mirror]: figures/sort-concentric-mirror.jpg
-[sort-concentric-splice-0]: figures/sort-concentric-splice-0.jpg
-[sort-concentric-splice-0.3]: figures/sort-concentric-splice-0.3.jpg
-[sort-concentric-splice-random]: figures/sort-concentric-splice-random.jpg
-[sort-edge-detect-50]: figures/sort-edge-detect-50.jpg
-[sort-edge-detect-100]: figures/sort-edge-detect-100.jpg
-[sort-edge-detect-200]: figures/sort-edge-detect-200.jpg
-[sort-image-threshold-0]: figures/sort-image-threshold-0.jpg
-[sort-image-threshold-0.6]: figures/sort-image-threshold-0.6.jpg
-[sort-image-threshold-1]: figures/sort-image-threshold-1.jpg
-[image-mask]: figures/image-mask.jpg
-[sort-image-mask]: figures/sort-image-mask.jpg
-[sort-tiles-default]: figures/sort-tiles-default.jpg
-[sort-tiles-custom-size]: figures/sort-tiles-custom-size.jpg
-[sort-tiles-half]: figures/sort-tiles-half.jpg
-[sort-tiles-half-random]: figures/sort-tiles-half-random.jpg
-[sort-channel-red]: figures/sort-channel-red.jpg
-[sort-animated]: figures/sort-animated.gif
+[original]: README-images/original.jpg
+[default]: README-images/sort-sum.jpg
+[sort50]: README-images/sort-50.jpg
+[sort100]: README-images/sort-100.jpg
+[sort50random]: README-images/sort-50-random.jpg
+[sort100random]: README-images/sort-100-random.jpg
+[sort-default]: README-images/sort-default.jpg
+[sort-sum]: README-images/sort-sum.jpg
+[sort-blue]: README-images/sort-blue.jpg
+[sort50reverse]: README-images/sort-50-reverse.jpg
+[sort-sum-d100]: README-images/sort-sum-d100.jpg
+[sort-sum-d200]: README-images/sort-sum-d200.jpg
+[sort100-progressive]: README-images/sort-100-progressive.jpg
+[sort100-concentric]: README-images/sort-100-concentric.jpg
+[sort100-diagonal]: README-images/sort-100-diagonal.jpg
+[sort-diagonal-single]: README-images/sort-diagonal-single.jpg
+[sort100-random-walk]: README-images/sort-100-random-walk.jpg
+[sort100-random-walk-horizontal]: README-images/sort-100-random-walk-horizontal.jpg
+[sort100-random-walk-vertical]: README-images/sort-100-random-walk-vertical.jpg
+[sort100-vertical]: README-images/sort-100-vertical.jpg
+[sort-concentric-mirror]: README-images/sort-concentric-mirror.jpg
+[sort-concentric-splice-0]: README-images/sort-concentric-splice-0.jpg
+[sort-concentric-splice-0.3]: README-images/sort-concentric-splice-0.3.jpg
+[sort-concentric-splice-random]: README-images/sort-concentric-splice-random.jpg
+[sort-edge-detect-50]: README-images/sort-edge-detect-50.jpg
+[sort-edge-detect-100]: README-images/sort-edge-detect-100.jpg
+[sort-edge-detect-200]: README-images/sort-edge-detect-200.jpg
+[sort-image-threshold-0]: README-images/sort-image-threshold-0.jpg
+[sort-image-threshold-0.6]: README-images/sort-image-threshold-0.6.jpg
+[sort-image-threshold-1]: README-images/sort-image-threshold-1.jpg
+[image-mask]: README-images/image-mask.jpg
+[sort-image-mask]: README-images/sort-image-mask.jpg
+[sort-tiles-default]: README-images/sort-tiles-default.jpg
+[sort-tiles-custom-size]: README-images/sort-tiles-custom-size.jpg
+[sort-tiles-half]: README-images/sort-tiles-half.jpg
+[sort-tiles-half-random]: README-images/sort-tiles-half-random.jpg
+[sort-channel-red]: README-images/sort-channel-red.jpg
+[sort-animated]: README-images/sort-animated.gif
 # PixelSorting – Sort Paths
 
 Sorting paths specify the directions in which pixels are sorted on an image. For example,
@@ -579,14 +579,14 @@ for row in pixel_iterator:
 ```
 
 [//]: # "Figures"
-[angled-line-60]: figures/sort-angled-line-60.jpg
-[circles]: figures/sort-circles.jpg
-[concentric]: figures/sort-100-concentric.jpg
-[diagonal]: figures/sort-100-diagonal.jpg
-[diagonal-single]: figures/sort-diagonal-single.jpg
-[fill-circles-30]: figures/sort-fill-circles-30.jpg
-[horizontal]: figures/sort-100-random.jpg
-[random-walk]: figures/sort-100-random-walk.jpg
-[random-walk-horizontal]: figures/sort-100-random-walk-horizontal.jpg
-[random-walk-vertical]: figures/sort-100-random-walk-vertical.jpg
-[vertical]: figures/sort-100-vertical.jpg
+[angled-line-60]: README-images/sort-angled-line-60.jpg
+[circles]: README-images/sort-circles.jpg
+[concentric]: README-images/sort-100-concentric.jpg
+[diagonal]: README-images/sort-100-diagonal.jpg
+[diagonal-single]: README-images/sort-diagonal-single.jpg
+[fill-circles-30]: README-images/sort-fill-circles-30.jpg
+[horizontal]: README-images/sort-100-random.jpg
+[random-walk]: README-images/sort-100-random-walk.jpg
+[random-walk-horizontal]: README-images/sort-100-random-walk-horizontal.jpg
+[random-walk-vertical]: README-images/sort-100-random-walk-vertical.jpg
+[vertical]: README-images/sort-100-vertical.jpg
