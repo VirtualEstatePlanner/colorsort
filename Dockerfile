@@ -19,7 +19,7 @@ RUN apk update \
     typing \
 && LIBRARY_PATH=/lib:/usr/lib pip install \
     pillow \
-&& pip del wheel \
+&& pip uninstall wheel \
 && apk del build-deps \
 && rm -rf /var/cache/apk/*
 ADD ./app /app
