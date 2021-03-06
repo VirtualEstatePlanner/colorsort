@@ -16,6 +16,7 @@ RUN apk update \
 && ln -sf python3 /usr/bin/python \
 && pip install \
     wheel \
+&& pip install \
     typing \
 && LIBRARY_PATH=/lib:/usr/lib pip install \
     pillow \
