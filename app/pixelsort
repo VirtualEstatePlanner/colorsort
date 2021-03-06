@@ -278,8 +278,8 @@ def main():
         if gif:
             gif_frames = []
             frames = get_gif_frames(img)
-            for eachFrame in frames:
-                frame = sort_image_with_cli_args(image=eachFrame, outfile=args.outfile, sorting_args=sorting_args,
+            for f in frames:
+                frame = sort_image_with_cli_args(image=f, outfile=args.outfile, sorting_args=sorting_args,
                                                  tile_args=tile_args, channel=args.channel, pixels=None,
                                                  save=args.save_frames)
                 gif_frames.append(frame)
