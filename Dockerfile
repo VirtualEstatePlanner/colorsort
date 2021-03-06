@@ -22,9 +22,10 @@ RUN apk update \
     pillow \
 && apk del build-deps \
 && rm -rf /var/cache/apk/*
-ENV WIDTH=20 HEIGHT=20
+ENV WIDTH=
+ENV HEIGHT=
 ADD ./app /app
 WORKDIR /app
 CMD /bin/ash
 #ENTRYPOINT python pixelsort --image-threshold 0 -i ${WIDTH} --use-tiles --tile-x ${WIDTH} --tile-y ${HEIGHT} /source.png -o /output/output.png --log
-ENTRYPOINT python pixelsort --image-threshold 0 -i ${WIDTH} /source.png -o /output/output.png --log
+ENTRYPOINT python pixelsort --log -s hue -s saturation -i ${WIDTH} /source.png -o /output/output.png
