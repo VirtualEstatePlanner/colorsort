@@ -1,7 +1,0 @@
-TODO for Pixelsorting
----------------------
- - better circles
- - seed sorting
- - more curved paths
- - parameters for various paths (e.g. angle of path)
- - finish tests
