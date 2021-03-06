@@ -1,7 +1,5 @@
 FROM alpine:latest
 
-ADD ./app /app
-WORKDIR /app
 VOLUME /output
 RUN apk update \
 && apk upgrade \
@@ -21,6 +19,9 @@ RUN apk update \
     typing \
 && LIBRARY_PATH=/lib:/usr/lib pip install \
     pillow \
+&& pip remove wheel \
 && apk del build-deps \
 && rm -rf /var/cache/apk/*
-ENTRYPOINT python /app/pixelsort --log -i 65000 /source.png -o /output/output.png
+ADD ./app /app
+WORKDIR /app
+ENTRYPOINT python /app/pixelsort --log -i 67391 /source.png -o /output/output.png

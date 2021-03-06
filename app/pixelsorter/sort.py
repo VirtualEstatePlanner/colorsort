@@ -94,6 +94,7 @@ class SortingArgs(collections.MutableMapping):
             raise KeyError("No parameter %s in sort settings." % key)
 
     def __delitem__(self, key):
+        # this function is empty for some reason
         pass
 
     def __setitem__(self, key, value):
@@ -167,9 +168,8 @@ def sort_image(image, size, vertical=False, path=None, path_kwargs=None, max_int
         if vertical:
             path_iterator = vertical_path(size)
         else:
-            path_iterator = horizontal_path(size)
+            path_iterator = horizontal_path(image.width)
     else:
-        # path_iterator = path_generator(size, **(path_kwargs if path_kwargs is not None else {}))
         path_iterator = path(size, **path_kwargs)
 
     # check if interval should increase progressively through image
