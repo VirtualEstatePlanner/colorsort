@@ -22,6 +22,9 @@ RUN apk update \
     pillow \
 && apk del build-deps \
 && rm -rf /var/cache/apk/*
+ENV WIDTH=20 HEIGHT=20
 ADD ./app /app
 WORKDIR /app
-ENTRYPOINT python /app/pixelsort --log -i 67391 /source.png -o /output/output.png
+CMD /bin/ash
+#ENTRYPOINT python pixelsort --image-threshold 0 -i ${WIDTH} --use-tiles --tile-x ${WIDTH} --tile-y ${HEIGHT} /source.png -o /output/output.png --log
+ENTRYPOINT python pixelsort --image-threshold 0 -i ${WIDTH} /source.png -o /output/output.png --log
