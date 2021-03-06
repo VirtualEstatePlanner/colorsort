@@ -21,7 +21,7 @@ One can run ` pip install -r requirements.txt` to download any necessary modules
 
 To run the script, use the command `python pixelsort.py <image> -o <result>` to sort a given image
 and store it in `<result>`. Use the `--log` flag to view progress for sorting particularly large images.
-Various sorting options are described in detail in [the full documentation](docs/DOCUMENTATION.md).
+Various sorting options are described in detail in below.
 One can also run the script with the `-h|--help` flag to see the full list of options.
 
 Given the following original image:
@@ -48,7 +48,7 @@ and sorts pixels in lines tilted at 60 degrees:
 
 ![Sorting with angled lines][sort-angled-line-60]
 
-Sorting paths are explained in more detail in [the paths documentation](docs/PATHS.md).
+Sorting paths are explained in more detail in [the paths documentation](PATHS.md).
 
 ### Animation
 
@@ -66,12 +66,12 @@ in which the angle of sorting goes from horizontal to vertical.
 One can also run the script using animated GIFs as input.
 
 [//]: # "Figures"
-[original]: docs/README-images/original.jpg
-[default]: docs/README-images/sort-sum.jpg
-[sort50random]: docs/README-images/sort-50-random.jpg
-[sort100-diagonal]: docs/README-images/sort-100-diagonal.jpg
-[sort-angled-line-60]: docs/README-images/sort-angled-line-60.jpg
-[sort-animated]: docs/README-images/sort-animated.gif
+[original]: README-images/original.jpg
+[default]: README-images/sort-sum.jpg
+[sort50random]: README-images/sort-50-random.jpg
+[sort100-diagonal]: README-images/sort-100-diagonal.jpg
+[sort-angled-line-60]: README-images/sort-angled-line-60.jpg
+[sort-animated]: README-images/sort-animated.gif
 
 
 ### License
@@ -222,7 +222,7 @@ Otherwise, one can explicitly specify what type of path to use with the `-p` or 
 
 ![Sorting with concentric path][sort100-vertical]
 
-Sorting paths are explained in detail in [the paths documentation.](docs/PATHS.md)
+Sorting paths are explained in detail in [the paths documentation.](PATHS.md)
 
 #### Path modifiers
 
