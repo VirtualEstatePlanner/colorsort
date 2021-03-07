@@ -22,16 +22,18 @@ RUN apk update \
     pillow \
 && apk del build-deps \
 && rm -rf /var/cache/apk/*
-ENV WIDTH=
-ENV HEIGHT=
+ENV OUTPUTFILE=
 ADD ./app /app
 WORKDIR /app
 CMD /bin/ash
 
-ENTRYPOINT python pixelsort --log -s chroma -i ${WIDTH} --use-tiles --tile-x ${WIDTH} --tile-y ${HEIGHT} /source.png -o /output/output.png
-#ENTRYPOINT python pixelsort --log -s hue -i ${WIDTH} --use-tiles --tile-x ${WIDTH} --tile-y ${HEIGHT} /source.png -o /output/output.png
-#ENTRYPOINT python pixelsort --log -s intensity -i ${WIDTH} --use-tiles --tile-x ${WIDTH} --tile-y ${HEIGHT} /source.png -o /output/output.png
-#ENTRYPOINT python pixelsort --log -s lightness -i ${WIDTH} --use-tiles --tile-x ${WIDTH} --tile-y ${HEIGHT} /source.png -o /output/output.png
-#ENTRYPOINT python pixelsort --log -s luma -i ${WIDTH} --use-tiles --tile-x ${WIDTH} --tile-y ${HEIGHT} /source.png -o /output/output.png
-#ENTRYPOINT python pixelsort --log -s saturation -i ${WIDTH} --use-tiles --tile-x ${WIDTH} --tile-y ${HEIGHT} /source.png -o /output/output.png
-#ENTRYPOINT python pixelsort --log -s value -i ${WIDTH} --use-tiles --tile-x ${WIDTH} --tile-y ${HEIGHT} /source.png -o /output/output.png
+ENTRYPOINT python pixelsort --log /source.png -o /output/${OUTPUTFILE}.png
+
+#ENTRYPOINT python pixelsort --log -s chroma /source.png -o /output/${OUTPUTFILE}.png
+#ENTRYPOINT python pixelsort --log -s hue /source.png -o /output/${OUTPUTFILE}.png
+#ENTRYPOINT python pixelsort --log -s intensity /source.png -o /output/${OUTPUTFILE}.png
+#ENTRYPOINT python pixelsort --log -s lightness /source.png -o /output/${OUTPUTFILE}.png
+#ENTRYPOINT python pixelsort --log -s luma /source.png -o /output/${OUTPUTFILE}.png
+#ENTRYPOINT python pixelsort --log -s saturation /source.png -o /output/${OUTPUTFILE}.png
+#ENTRYPOINT python pixelsort --log -s value /source.png -o /output/${OUTPUTFILE}.png
+#ENTRYPOINT python pixelsort --log -s sum /source.png -o /output/${OUTPUTFILE}.png
