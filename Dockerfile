@@ -27,4 +27,4 @@ ADD ./app /app
 WORKDIR /app
 CMD /bin/ash
 
-ENTRYPOINT python pixelsort --log -s chroma /source.png -o /output/${OUTPUTFILE}.png
+ENTRYPOINT python pixelsort --log -s hue /source.png -o /output/${OUTPUTFILE}.png
