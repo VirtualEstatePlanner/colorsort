@@ -27,4 +27,4 @@ ADD ./app /app
 WORKDIR /app
 CMD /bin/ash
 
-ENTRYPOINT python pixelsort --log -s intensity /source.png -o /output/${OUTPUTFILE}.png
+ENTRYPOINT python pixelsort --log -s value /source.png -o /output/${OUTPUTFILE}.png
