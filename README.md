@@ -12,4 +12,4 @@ First select a sorting style (as defined by the image tag) then run:
 `georgegeorgulasiv/colorsort:`*SORT_CRITERIA_TAG*
 ```
 
-Then wait until the image appears in your output directory
+Then wait until the image appears in your output directory.
