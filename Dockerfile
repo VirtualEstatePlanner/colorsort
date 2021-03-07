@@ -27,4 +27,4 @@ ADD ./app /app
 WORKDIR /app
 CMD /bin/ash
 
-ENTRYPOINT python pixelsort --log -s luma /source.png -o /output/${OUTPUTFILE}.png
+ENTRYPOINT python pixelsort --log -s lightness /source.png -o /output/${OUTPUTFILE}.png
